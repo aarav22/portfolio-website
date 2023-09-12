@@ -1,10 +1,12 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: other projects
+description: some other dev projects I've worked on
+img: /assets/img/ledgraph-video.gif
+redirect: https://github.com/aarav22/
 importance: 3
 category: fun
+body: false
 ---
 
 Every project has a beautiful feature showcase page.

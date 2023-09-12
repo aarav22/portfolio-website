@@ -2,25 +2,29 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://cs.ashoka.edu.in/'>Department of Computer Science, Ashoka University</a>. 
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: prof_pic.png
+  image_circular: true # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>aarav.varshney@ashoka.edu.in</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a Researcher and a Teaching Fellow at Ashoka University. Currently, my research interests lie in applied cryptography, specifically in designing and implementing protocols that are compatible with existing network infrastructure such as TLS. My supervisor is [Mahavir Jhawar](https://sites.google.com/site/homeofmahavir/Home).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I have worked as a software engineer for a major part of my small professional career. Previously, I worked at [Amuse Labs](https://amuselabs.com/) under [Sudheendra Hangal](http://xenon.stanford.edu/~hangal/) and at [SALT](https://www.salt.pe/), a Y Combinator-backed startup. I have also co-founded two startups &mdash; [Beyond Design Studio](https://beyonddesignstudio.com/) and Jaan Pehchan.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+### Working as a researcher:
+I undertook my undergraduate thesis on anonymous credential systems, starting with my review of [Blind Certificate Authorities](https://eprint.iacr.org/2018/1022) by Wang et al. This paper addresses a challenge that employees face when exposing their organisation's wrongdoing to external journalists, where the journalist requires proof of the employee's membership in the organisation. However, the employee risks retaliation if they share their identity. Wang et al. provide a solution by presenting an anonymous way of generating proof using standard protocols like TLS (a way to establish a secure channel between a user and the server) and SMTP (used for sending and receiving email messages over the internet). I then developed a new protocol that works with these standard protocols but reduces computation costs and implementation effort while generating anonymous proof. *This work is currently under a conference submission.*
+
+Recently, I began working in post-quantum cryptography with my supervisor. Our project is focused on developing a secure communication system that can withstand attacks from quantum computers, which have the potential to break traditional cryptographic systems. Specifically, we are building a post-quantum key distribution framework to securely distribute encryption keys among communicating parties. Our project combines standard and post-quantum encryption to ensure maximum robustness and security.
+
+
+ 
