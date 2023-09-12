@@ -28,10 +28,12 @@ While our classical public-key encryption methods remain unbroken at present, it
 
 **Solution:** To address these requirements, we have developed a key management software solution in Python. One notable feature of our solution is its minimal reliance on external dependencies. We have integrated the source code from Crystals for Kyber and Dilithium into our software for key generation and encryption purposes, minimizing external dependencies and enhancing the software's self-contained nature.
 
-Our software not only meets the stipulated requirements but also ensures the long-term security and management of post-quantum keys, aligning with the evolving landscape of quantum computing and cryptography.
+Our software not only meets the stipulated requirements but also ensures the long-term security and management of post-quantum keys.
 
 
-### Project 2: post-quantum participation certificates
+### Project 2: dilithium-signed workshop certificates
 
+**Requirement:** The objective of this project is to create a digital participation certificate that is signed using the Dilithium signature scheme. The certificate should be verifiable using the public key of the signer. 
 
+**Solution:** The [website](https://pqcworkshop-cs-ashoka.streamlit.app/) hosts the user-interface for verifying the signed certificates.
 
