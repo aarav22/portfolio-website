@@ -12,28 +12,26 @@ body: false
 ### Background
 The rapid advancement of quantum computing has exposed vulnerabilities in traditional cryptography, particularly in public-key cryptography. Experts predict that within the next decade, our existing public-key encryption methods may become compromised. To address this impending threat, the field of Post-Quantum Cryptography (PQC) has emerged, focusing on cryptographic techniques that remain secure even in the face of quantum computers.
 
-The National Institute of Standards and Technology (NIST) has taken a pivotal role in this effort by conducting a competition to standardize PQC algorithms. In this competition, Crystals-Kyber has been identified as the Key Encapsulation Mechanism (KEM) and public-key encryption scheme, while Crystals-Dilithium, Falcon, and Sphincs^+ have been designated as signature schemes for standardization.
+The National Institute of Standards and Technology (NIST) has taken a pivotal role in this effort by conducting a competition to standardize PQC algorithms. In this competition, Crystals-Kyber has been identified as the Key Encapsulation Mechanism (KEM) and public-key encryption scheme, while Crystals-Dilithium, Falcon, and Sphincs$^+$ have been designated as signature schemes for standardization.
 
-While our classical public-key encryption methods remain unbroken at present, it is imperative to initiate the transition to PQC, primarily due to the potential vulnerability of ciphertext storage to attacks. This proactive approach ensures the long-term security of sensitive information in an era where the capabilities of quantum computers are continually evolving.
+While our classical public-key encryption methods remain unbroken at present, it is imperative to initiate the transition to PQC, primarily due to the potential *store now, decrypt later* attacks. This proactive approach ensures the long-term security of sensitive information in an era where the capabilities of quantum computers are continually evolving.
 
 ### Project 1: Post-Quantum Key Management Software
 
-**Requirement:** The objective of this project is to create a robust key management software capable of securely storing and managing post-quantum keys. Several key design requirements are essential for this software:
+**Aim:** The objective of this project is to create a key management software capable of securely storing and managing post-quantum keys. Several key design requirements are essential for this software:
 
-1. **Key Generation and Sharing:** The software should enable an administrator to generate key material securely. Subsequently, this key material should be shareable with clients, either through physical means or digital channels, employing Post-Quantum Cryptography (PQC) primitives. This ensures that keys are generated and distributed using quantum-resistant methods.
+1. **Key Generation and Sharing:** The software should enable an administrator (KDC) to generate key material securely. Subsequently, this key material should be shareable with clients, either through physical means (HSM) or digital channels (TLS), employing Post-Quantum Cryptography (PQC) primitives.
 
-2. **Authentication and Revocation:** It is crucial that the software allows clients to authenticate communications from the administrator. Additionally, clients should have the capability to revoke any received key material if needed, ensuring that the security of the keys can be maintained over time.
+2. **Authentication and Revocation:** It is important that the software allows clients to authenticate communications from the KDC. Additionally, clients should have the capability to revoke any received key material from further use, if needed.
 
-3. **Platform Independence:** To maximize usability and flexibility, the software should be designed to be independent of external dependencies. It should have the versatility to run seamlessly on various platforms, enhancing its adaptability for diverse user environments.
+3. **Platform Independence:** To ensure auditability, the software should be independent of external dependencies. Furthermore, it should have the ability to run seamlessly on various platforms, enhancing its adaptability.
 
-**Solution:** To address these requirements, we have developed a key management software solution in Python. One notable feature of our solution is its minimal reliance on external dependencies. We have integrated the source code from Crystals for Kyber and Dilithium into our software for key generation and encryption purposes, minimizing external dependencies and enhancing the software's self-contained nature.
-
-Our software not only meets the stipulated requirements but also ensures the long-term security and management of post-quantum keys.
+**Implementation:** To meet these requirements, we've designed a Python-based key management software solution. A key aspect of the software (no pun intended) is the use of post-quantum X.509 certificates for authentication, and data transportation via extensions. These certificates are custom-built yet maintain verifiability through OQS's [OpenSSL](https://github.com/open-quantum-safe/openssl) fork. 
 
 
 ### Project 2: dilithium-signed workshop certificates
 
-**Requirement:** The objective of this project is to create a digital participation certificate that is signed using the Dilithium signature scheme. The certificate should be verifiable using the public key of the signer. 
+**Aim:** This project aims to generate digital participation certificates that are authenticated using the Dilithium signature scheme. These certificates should be easily verifiable through the signer's public key.
 
-**Solution:** The [website](https://pqcworkshop-cs-ashoka.streamlit.app/) hosts the user-interface for verifying the signed certificates.
+**Implementation:** These certificates were created and distributed to all participants during the [PQC Workshop](https://pqcworkshop-cs-ashoka.streamlit.app/) at Ashoka University. 
 

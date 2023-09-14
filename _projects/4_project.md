@@ -4,8 +4,8 @@ title: other projects
 description: some other dev projects I've worked on
 img: /assets/img/ledgraph-video.gif
 redirect: https://github.com/aarav22/
-importance: 3
-category: fun
+importance: 4
+category: work
 body: false
 ---
 

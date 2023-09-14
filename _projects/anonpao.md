@@ -12,7 +12,7 @@ related_publications: youchoose
 
 
 ### Problem
-Company reviews are important for both potential employees and the company itself, but they can be risky for current employees to post because it might harm them. Anonymous reviews can be faked, and third-party identity verification requires trust that the third party won't side with the company and disclose the employee's identity.
+Company reviews are important for both potential employees and the company itself, but they can be risky for current employees to post as they might face retaliation from the company. Anonymous reviews can be faked, and third-party identity verification requires trust that the third party won't side with the company and disclose the employee's identity.
 
 <div class="row">
     <div class="col-sm-6 mt- mt-md-0">
@@ -21,6 +21,6 @@ Company reviews are important for both potential employees and the company itsel
 </div>
 
 ## Solution 
-Our solution allows users to prove to a verifier that they own an account (say email account) with the company without revealing which account (i.e. the email address).
+Our solution allows users to prove to a verifier that they own an account (say email account) with the company without revealing which account (i.e. the email address). An important aspect of this solution is that the prover does not require any co-operation from the company as is usually the case in anonymous credentials.
 
 
