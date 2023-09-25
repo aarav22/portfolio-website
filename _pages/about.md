@@ -6,8 +6,8 @@ subtitle: <a href='https://cs.ashoka.edu.in/'>Department of Computer Science, As
 
 profile:
   align: right
-  image: prof_pic.png
-  image_circular: true # crops the image to make it circular
+  image: prof_pic.jpg
+  image_circular: false # crops the image to make it circular
   address: >
     <p>aarav.varshney@ashoka.edu.in</p>
 
