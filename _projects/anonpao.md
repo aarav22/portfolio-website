@@ -16,7 +16,7 @@ Company reviews are important for both potential employees and the company itsel
 
 <div class="row">
     <div class="col-sm-6 mt- mt-md-0">
-        {% include figure.html path="assets/img/anonpao-feedback" title="feedback image" class="img-fluid rounded" %}
+        {% include figure.liquid path="assets/img/anonpao-feedback" title="feedback image" class="img-fluid rounded" %}
     </div>
 </div>
 
