@@ -14,7 +14,7 @@ profile:
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 I'm a Researcher and a Teaching Fellow at Ashoka University. Currently, my research interests lie in applied cryptography, specifically in designing and implementing protocols that are compatible with existing network infrastructure such as TLS. My supervisor is [Mahavir Jhawar](https://sites.google.com/site/homeofmahavir/Home).
