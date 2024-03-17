@@ -4,6 +4,7 @@ title: Anonymous PAO
 description: A proof of concept for a cryptographic protocol that allows users to prove ownership of an account without revealing their account identifier.
 img: assets/img/anonpao-otp.png
 importance: 1
+redirect: https://eprint.iacr.org/2024/029
 category: work
 related_publications: youchoose
 ---
