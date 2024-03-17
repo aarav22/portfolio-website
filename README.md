@@ -1,3 +1,7 @@
+git pull upstream master
+to fetch upstream changes
+
+
 # al-folio
 
 <div align="center">
